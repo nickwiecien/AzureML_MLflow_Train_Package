@@ -11,7 +11,7 @@ trigger:
     - /
 
 variables:
-- group: azureml-variables
+- group: azureml_variables
 
 pool:
   vmImage: 'ubuntu-latest'

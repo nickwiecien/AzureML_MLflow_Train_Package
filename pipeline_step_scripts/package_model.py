@@ -24,7 +24,7 @@ parser.add_argument('--model_name', type=str, required=True)
 
 
 args = parser.parse_args()
-model_name = args.model_name
+model_name = args.model_name.lower()
 print(args.model_name)
 # Get current run
 current_run = Run.get_context()
