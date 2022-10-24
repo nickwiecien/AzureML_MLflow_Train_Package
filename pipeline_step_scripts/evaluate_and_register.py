@@ -97,6 +97,12 @@ else:
         # Previous model performs better, cancel out
         # Here we proceed by default for demonstration purposes
         # parent_run.cancel()
+        
+        # FOR DEMONSTRATION ONLY
+        mlflow.register_model(
+            f"runs:/{mlflow_run_id}/model",
+            model_name
+        )
         pass
     else:
         mlflow.register_model(
