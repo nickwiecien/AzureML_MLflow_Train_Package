@@ -13,7 +13,7 @@ trigger:
 resources:
   containers:
   - container: mlops
-    image: mcr.microsoft.com/azureml/curated/sklearn-1.0-ubuntu20.04-py38-cpu:33
+    image: mcr.microsoft.com/mlops/python:latest
 
 variables:
 - group: azureml_variables
