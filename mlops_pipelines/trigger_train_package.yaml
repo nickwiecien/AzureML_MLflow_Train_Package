@@ -13,7 +13,7 @@ trigger:
 resources:
   containers:
   - container: mlops
-    image: mcr.microsoft.com/mlops/python:latest
+    image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20220815.v1
 
 variables:
 - group: azureml_variables
