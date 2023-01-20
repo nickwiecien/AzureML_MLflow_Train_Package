@@ -13,10 +13,10 @@ trigger:
 variables:
 - group: azureml_variables
 
-# pool:
-#   vmImage: 'ubuntu-latest'
 pool:
-  name: NWKAgentPool
+  vmImage: 'ubuntu-latest'
+# pool:
+#   name: NWKAgentPool
 
 stages:
 - stage: 'Publish_AML_Pipeline'
