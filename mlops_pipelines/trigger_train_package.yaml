@@ -10,6 +10,11 @@ trigger:
     include:
     - /
 
+resources:
+  containers:
+  - container: mlops
+    image: mcr.microsoft.com/mlops/python:latest
+
 variables:
 - group: azureml_variables
 
@@ -23,6 +28,7 @@ stages:
   displayName: 'Publish AML Pipeline'
   jobs:
   - job: "AML_PIPELINE"
+    container: mlops
     displayName: "Build and Publish AML Pipeline"
     timeoutInMinutes: 0
     steps:
