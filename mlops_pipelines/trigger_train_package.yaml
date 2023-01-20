@@ -45,10 +45,7 @@ stages:
           set -e # fail on error
           export SUBSCRIPTION_ID=$(az account show --query id -o tsv)
           # Invoke the Python building and publishing a training pipeline
-          conda create -n envname python=3.7 -y
-          conda init bash
-          conda activate envname
           python -m pip install pip --upgrade
-          python -m pip install azureml-defaults==1.48.0 azureml-pipeline-core==1.48.0 azureml-pipeline-steps==1.48.0
+          python -m pip install azureml-defaults azureml-pipeline-core azureml-pipeline-steps
           python -m AML_CreateTrainingPipeline
       displayName: 'Publish AML Training Pipeline'
