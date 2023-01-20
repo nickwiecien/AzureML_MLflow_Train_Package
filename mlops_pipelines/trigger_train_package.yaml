@@ -13,7 +13,7 @@ trigger:
 resources:
   containers:
   - container: mlops
-    image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20220815.v1
+    image: mcr.microsoft.com/mlops/python:latest
 
 variables:
 - group: azureml_variables
@@ -52,6 +52,6 @@ stages:
           export SUBSCRIPTION_ID=$(az account show --query id -o tsv)
           # Invoke the Python building and publishing a training pipeline
           python -m pip install pip --upgrade --user
-          python -m pip install azureml-defaults azureml-pipeline-core azureml-pipeline-steps --user
+          python -m pip install azureml-defaults==1.47.0 azureml-pipeline-core==1.47.0 azureml-pipeline-steps==1.47.0 --user
           python -m AML_CreateTrainingPipeline
       displayName: 'Publish AML Training Pipeline'
