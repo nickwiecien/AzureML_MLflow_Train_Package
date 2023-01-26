@@ -19,7 +19,7 @@ variables:
 - group: azureml_variables
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'mlops-vm-scale-set'
 # pool:
 #   name: NWKAgentPool
 
