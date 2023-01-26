@@ -18,10 +18,10 @@ resources:
 variables:
 - group: azureml_variables
 
-pool:
-  vmImage: 'ubuntu-latest'
 # pool:
-#   name: NWKAgentPool
+#   vmImage: 'ubuntu-latest'
+pool:
+  name: mlops-vm-scale-set
 
 stages:
 - stage: 'Publish_AML_Pipeline'
