@@ -16,6 +16,9 @@ Because we are executing Azure Pipelines which need to connect with privately ne
 Follow the steps in this guide to set up your self-hosted build agent.
 [Deploy a Self-Hosted Build Agent in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v2-linux?view=azure-devops)
 
+Alternatively, you may consider using a VM scale set with a similar private neworking configuration. Details for creating and configuring an Azure VM scale set as a build agent are included int he documentation below.
+[Azure virtual machine scale set agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops)
+
 After provisioning this VM, update the networking settings on the provisioned storage account to allow communications from the VNet your VM is deployed into, or whitelist the public IP of this agent.
 
 #### Azure DevOps Project
