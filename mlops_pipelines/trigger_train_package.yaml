@@ -51,6 +51,6 @@ stages:
           set -e # fail on error
           export SUBSCRIPTION_ID=$(az account show --query id -o tsv)
           # Invoke the Python building and publishing a training pipeline
-          python -m pip install azureml-core==1.47.0 azureml-defaults==1.47.0 azureml-pipeline-core==1.47.0 --user
+          python -m pip install azure-core==1.26.0 azureml-defaults==1.47.0 azureml-pipeline-core==1.47.0 --user
           python -m AML_CreateTrainingPipeline
       displayName: 'Publish AML Training Pipeline'
