@@ -33,11 +33,18 @@ Within the `mlops_pipelines` subdir is a yaml definition of an Azure Pipeline to
     - Click `Next` to complete creation of your service connection
 
 - Create a Variable Group named `azureml_variables` and add the following:
-    - SUBSCRIPTION_ID (<i>Id of the Azure Subscription which contains your target AML workspace</i>)
-    - RESOURCE_GROUP (<i>Name of the Azure Resource Group which contains your target AML workspace</i>)
-    - WORKSPACE_NAME (<i>Name of the targeted Azure Machine Learning workspace</i>)
-    - EXPERIMENT_NAME (<i>Name to be given to DevOps-pipeline submitted runs</i>)
-    - WORKSPACE_SVC_CONNECTION (<i>Name of the created DevOps Service Connection to your target Azure Machine Learning workspace (should be 'workspace_svc_connection')</i>)
+
+| Variable Name                                | Value                                    |
+|-------------------------------------|------------------------------------------|
+|SUBSCRIPTION_ID                 | Id of the Azure Subscription which contains your target AML workspacee |
+| RESOURCE_GROUP            | Name of the Azure Resource Group which contains your target AML workspace |
+| WORKSPACE_NAME | Name of the targeted Azure Machine Learning workspace |
+| EXPERIMENT_NAME     | Name to be given to DevOps-pipeline submitted runs |
+| WORKSPACE_SVC_CONNECTION     | Name of the created DevOps Service Connection to your target Azure Machine Learning workspace (should be 'workspace_svc_connection') |
+| COSMOS_URI     | Uri for Cosmos DB service used to store processed results |
+| COSMOS_KEY     | Key for the Cosmos DB service referenced above |
+| COSMOS_DATABASE_NAME     | Name of the targeted Cosmos database |
+| COSMOS_CONTAINER_NAME     | Name of the targeted Cosmos container |
 
 - Create a new pipeline
     - From Azure DevOps create a new pipeline
