@@ -41,10 +41,6 @@ Within the `mlops_pipelines` subdir is a yaml definition of an Azure Pipeline to
 | WORKSPACE_NAME | Name of the targeted Azure Machine Learning workspace |
 | EXPERIMENT_NAME     | Name to be given to DevOps-pipeline submitted runs |
 | WORKSPACE_SVC_CONNECTION     | Name of the created DevOps Service Connection to your target Azure Machine Learning workspace (should be 'workspace_svc_connection') |
-| COSMOS_URI     | Uri for Cosmos DB service used to store processed results |
-| COSMOS_KEY     | Key for the Cosmos DB service referenced above |
-| COSMOS_DATABASE_NAME     | Name of the targeted Cosmos database |
-| COSMOS_CONTAINER_NAME     | Name of the targeted Cosmos container |
 
 - Create a new pipeline
     - From Azure DevOps create a new pipeline
