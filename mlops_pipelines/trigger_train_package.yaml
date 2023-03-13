@@ -41,6 +41,7 @@ stages:
         script: |
           python -m pip install jupyter nbconvert
           jupyter nbconvert --to script AML_CreateTrainingPipeline.ipynb
+          python -m AML_CreateTrainingPipeline
       displayName: 'Convert Jupyter Notebook to Python Script'
 
     - task: Bash@3
