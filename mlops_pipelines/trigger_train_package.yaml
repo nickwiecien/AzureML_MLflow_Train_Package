@@ -43,7 +43,7 @@ stages:
           jupyter nbconvert --to script AML_CreateTrainingPipeline.ipynb
       displayName: 'Convert Jupyter Notebook to Python Script'
 
-    - task: AzureCLI@1
+    - task: AzureCLI@2
       inputs:
         azureSubscription: '$(WORKSPACE_SVC_CONNECTION)'
         scriptLocation: inlineScript
