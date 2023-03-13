@@ -48,7 +48,7 @@ stages:
         azureSubscription: '$(WORKSPACE_SVC_CONNECTION)'
         scriptLocation: inlineScript
         workingDirectory: $(Build.SourcesDirectory)
-        inlineScript: |
+        script: |
           set -e # fail on error
           export SUBSCRIPTION_ID=$(az account show --query id -o tsv)
           # Invoke the Python building and publishing a training pipeline
