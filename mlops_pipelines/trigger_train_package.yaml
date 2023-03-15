@@ -19,10 +19,7 @@ variables:
 - group: azureml_variables
 
 pool:
-  # vmImage: 'ubuntu-latest'
-  name: 'hackagent'
-# pool:
-#   name: mlops-vm-scale-set
+  name: 'mlopsagent'
 
 stages:
 - stage: 'Publish_AML_Pipeline'
