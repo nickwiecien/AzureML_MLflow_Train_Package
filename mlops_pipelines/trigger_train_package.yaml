@@ -19,7 +19,7 @@ variables:
 - group: azureml_variables
 
 pool:
-  name: 'mlopsagent'
+  name: 'mlopspool'
 
 stages:
 - stage: 'Publish_AML_Pipeline'
