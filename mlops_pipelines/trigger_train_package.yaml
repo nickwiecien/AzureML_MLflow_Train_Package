@@ -19,7 +19,8 @@ variables:
 - group: azureml_variables
 
 pool:
-  name: 'ubuntu-latest'
+  vmImage: ubuntu-latest # This is the default if you don't specify a pool or vmImage.
+
 
 stages:
 - stage: 'Publish_AML_Pipeline'
