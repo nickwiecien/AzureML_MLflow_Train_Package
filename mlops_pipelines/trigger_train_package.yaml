@@ -19,7 +19,7 @@ variables:
 - group: azureml_variables
 
 pool:
-  name: 'mlopspool'
+  name: 'ubuntu-latest'
 
 stages:
 - stage: 'Publish_AML_Pipeline'
